@@ -77,17 +77,29 @@ namespace DAL
         /// <param name="idDepartamento">El id del departamento a devolver.</param>
         /// <param name="listadoDepartamentos">El listado completo de departamentos</param>
         /// <returns>El departamento con el id correspondiente.</returns>
-        public static clsDepartamento devolverDepartamento(List<clsDepartamento> listadoDepartamentos, int idDepartamento)
+        public static clsDepartamento devolverDepartamento(int idDepartamento)
         {
+            List<clsDepartamento> listadoDepartamentos = listadoCompletoDepartamentos();
             bool encontrado = false;
             int count = 0;
+            clsDepartamento departamento = new clsDepartamento();
             while (!encontrado)
             {
                 if (listadoDepartamentos[count].Id == idDepartamento)
                 {
+                    encontrado = true;
+                    departamento = listadoDepartamentos[count];
                 }
-                count++;
+                else
+                {
+                    count++;
+                }
             }
+            if (!encontrado)
+            {
+                departamento = new clsDepartamento();
+            }
+            return departamento;
         }
     }
 }
