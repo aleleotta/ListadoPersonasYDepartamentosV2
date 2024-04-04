@@ -48,18 +48,10 @@ namespace DAL
         /// <returns>La persona con el id correspondiente.</returns>
         public static clsPersona devolverPersona(int idPersona)
         {
-            List<clsPersona> listadoPersonas = new List<clsPersona>
-            {
-                new clsPersona(1, "Fernando", "Galiana", new DateTime(1980, 05, 05), 1),
-                new clsPersona(2, "user2", "undefined2", new DateTime(1995, 02, 10), 2),
-                new clsPersona(3, "user3", "undefined3", new DateTime(2000, 01, 11), 3),
-                new clsPersona(4, "user4", "undefined4", new DateTime(1998, 10, 05), 4),
-                new clsPersona(5, "user5", "undefined5", new DateTime(2003, 07, 10), 5),
-                new clsPersona(6, "user6", "undefined6", new DateTime(2004, 06, 12), 6)
-            };
+            List<clsPersona> listadoPersonas = listadoCompletoPersonas();
             bool encontrado = false;
             int count = 0;
-            clsPersona persona;
+            clsPersona persona = new clsPersona();
             while (!encontrado && count < listadoPersonas.Count)
             {
                 if (listadoPersonas[count].Id == idPersona)
