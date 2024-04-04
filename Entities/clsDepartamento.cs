@@ -9,8 +9,8 @@ namespace Entities
     public class clsDepartamento
     {
         #region Attributes
-        private int id;
-        private string nombreDept;
+        private int id = 0;
+        private string nombreDept = "";
         #endregion
 
         #region Properties
@@ -37,7 +37,9 @@ namespace Entities
         }
         #endregion
 
-        #region Constructor
+        #region Constructors
+        public clsDepartamento() { }
+
         public clsDepartamento(int id, string nombreDept)
         {
             this.id = id;

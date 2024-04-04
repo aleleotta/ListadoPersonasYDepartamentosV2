@@ -3,11 +3,11 @@
     public class clsPersona
     {
         #region Attributes
-        private int id;
-        private string nombre;
-        private string apellidos;
+        private int id = 0;
+        private string nombre = "";
+        private string apellidos = "";
         private DateTime fechaNac;
-        private int idDept;
+        private int idDept = 0;
         #endregion
 
         #region Properties
@@ -75,7 +75,9 @@
         }
         #endregion
 
-        #region Constructor
+        #region Constructors
+        public clsPersona() { }
+
         public clsPersona(int id, string nombre, string apellidos, DateTime fechaNac, int idDept)
         {
             this.id = id;

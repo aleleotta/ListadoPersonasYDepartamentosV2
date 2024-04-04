@@ -4,6 +4,8 @@ namespace DAL
 {
     public class ListadoPersonasDAL
     {
-        public static List<clsPersona> getListadoCompletoPersonas() { }
+        public static List<clsPersona> getListadoCompletoPersonas()
+        {
+        }
     }
 }
