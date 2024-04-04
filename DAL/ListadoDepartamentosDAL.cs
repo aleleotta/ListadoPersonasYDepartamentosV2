@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities;
 
 namespace DAL
 {
-    internal class ListadoDepartamentosDAL
+    public class ListadoDepartamentosDAL
     {
+        public static List<clsDepartamento> getListadoCompletoDepartamentos() { }
     }
 }
