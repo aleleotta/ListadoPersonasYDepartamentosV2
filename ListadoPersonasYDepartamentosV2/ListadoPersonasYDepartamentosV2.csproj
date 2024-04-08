@@ -58,18 +58,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\Menu.xaml.cs">
-	    <DependentUpon>Menu.xaml</DependentUpon>
+	  <Compile Update="Views\MainPage.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
 	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Views\ListadoDepartamentos.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\ListadoPersonas.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

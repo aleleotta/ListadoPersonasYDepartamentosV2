@@ -1,8 +1,8 @@
 ﻿namespace ListadoPersonasYDepartamentosV2.Views
 {
-    public partial class Menu : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public Menu()
+        public MainPage()
         {
             InitializeComponent();
         }

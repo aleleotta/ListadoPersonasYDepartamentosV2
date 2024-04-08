@@ -7,18 +7,8 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Menu"
-        ContentTemplate="{DataTemplate local:Menu}"
-        Route="Menu" />
-    
-    <ShellContent
-        Title="Listado Personas"
-        ContentTemplate="{DataTemplate local:ListadoPersonas}"
-        Route="ListadoPersonas" />
-    
-    <ShellContent
-        Title="Listado Departamentos"
-        ContentTemplate="{DataTemplate local:ListadoDepartamentos}"
-        Route="ListadoDepartamentos" />
+        Title="MainPage"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
 
 </Shell>
