@@ -1,12 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities;
 
 namespace ListadoPersonasYDepartamentosV2.Models
 {
-    internal class clsPersonaMayorEdad
+    public class clsPersonaMayorEdad : clsPersona
     {
+        private bool mayor;
+
+        public bool Mayor
+        {
+            get
+            {
+                return mayor;
+            }
+        }
+
+        public clsPersonaMayorEdad(clsPersona persona) : base(persona)
+        {
+            int edad = DateTime.Now.Year - FechaNac.Year;
+            if (edad >= 18)
+            {
+                mayor = true;
+            }
+            else
+            {
+                mayor = false;
+            }
+        }
     }
 }

@@ -1,15 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ListadoPersonasYDepartamentosV2.ViewModels"
              x:Class="ListadoPersonasYDepartamentosV2.Views.MainPage"
              Title="Menu"
              BackgroundColor="White">
 
+    <ContentPage.BindingContext>
+        <local:MainVM/>
+    </ContentPage.BindingContext>
+
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+            Padding="30,0">
+            <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center"/>
+            <HorizontalStackLayout>
+                
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

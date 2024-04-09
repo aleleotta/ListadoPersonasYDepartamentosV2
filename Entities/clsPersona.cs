@@ -86,6 +86,15 @@
             this.fechaNac = fechaNac;
             this.idDept = idDept;
         }
+
+        public clsPersona(clsPersona persona)
+        {
+            this.id = persona.id;
+            this.nombre = persona.nombre;
+            this.apellidos = persona.apellidos;
+            this.fechaNac = persona.fechaNac;
+            this.idDept = persona.idDept;
+        }
         #endregion
     }
 }
