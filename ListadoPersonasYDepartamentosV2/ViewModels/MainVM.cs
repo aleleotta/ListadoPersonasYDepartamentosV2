@@ -12,6 +12,7 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         private List<clsPersona> listadoPersonas;
         private List<clsDepartamento> listadoDepartamentos;
         private clsPersona personaSeleccionada;
+        private clsDepartamento departamentoSeleccionado;
         private int countPersonas;
         #endregion
 
