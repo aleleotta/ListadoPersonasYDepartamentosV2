@@ -19,12 +19,12 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         #region Properties
         public List<clsPersona> ListadoPersonas { get { return listadoPersonas; } }
         public List<clsDepartamento> ListadoDepartamentos { get { return listadoDepartamentos; } }
+        public clsPersona PersonaSeleccionada { get { return personaSeleccionada; } }
+        public clsDepartamento DepartamentoSeleccionado { get { return departamentoSeleccionado; } }
         #endregion
 
         #region Constructors
-        public MainVM()
-        {
-        }
+        public MainVM() {}
         #endregion
 
         #region Methods
