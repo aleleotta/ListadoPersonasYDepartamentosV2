@@ -21,6 +21,7 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         public List<clsDepartamento> ListadoDepartamentos { get { return listadoDepartamentos; } }
         public clsPersona PersonaSeleccionada { get { return personaSeleccionada; } }
         public clsDepartamento DepartamentoSeleccionado { get { return departamentoSeleccionado; } }
+        public int CountPersonas { get { return countPersonas; } }
         #endregion
 
         #region Constructors
