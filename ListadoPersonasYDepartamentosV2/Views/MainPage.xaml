@@ -13,9 +13,9 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0">
-            <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center"/>
-            <HorizontalStackLayout>
-                
+            <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Picker Title="Departments" />
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

@@ -1,6 +1,5 @@
 ﻿using BL;
 using Entities;
-using ListadoPersonasYDepartamentosV2.Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -25,7 +24,11 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         #endregion
 
         #region Constructors
-        public MainVM() {}
+        public MainVM()
+        {
+            listadoPersonas = clsListadosBL.getListadoPersonas();
+            listadoDepartamentos = clsListadosBL.getListadoDepartamentos();
+        }
         #endregion
 
         #region Methods
