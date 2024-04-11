@@ -15,7 +15,7 @@ namespace BL
             List<clsPersona> listadoFiltrado = new List<clsPersona>();
             foreach (clsPersona persona in clsListadosDAL.listadoCompletoPersonas())
             {
-                if (persona.Id == idPersona)
+                if (persona.IdDept == idPersona)
                 {
                     listadoFiltrado.Add(persona);
                 }

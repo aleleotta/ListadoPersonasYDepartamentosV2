@@ -20,20 +20,40 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         public List<clsDepartamento> ListadoDepartamentos { get { return listadoDepartamentos; } }
         public clsPersona PersonaSeleccionada
         {
-            get { return personaSeleccionada; }
+            get
+            {
+                return personaSeleccionada;
+            }
             set
             {
                 personaSeleccionada = value;
             }
         }
-        public clsDepartamento DepartamentoSeleccionado { get { return departamentoSeleccionado; } set { departamentoSeleccionado = value; } }
-        public int CountPersonas { get { return countPersonas; } }
+        public clsDepartamento DepartamentoSeleccionado
+        {
+            get
+            {
+                return departamentoSeleccionado;
+            }
+            set
+            {
+                departamentoSeleccionado = value;
+                listadoPersonas = new List<clsPersona>(clsListadosBL.getListadoPersonasPorId(departamentoSeleccionado.Id));
+                OnPropertyChanged("ListadoPersonas");
+            }
+        }
+        public int CountPersonas
+        {
+            get
+            {
+                return countPersonas;
+            }
+        }
         #endregion
 
         #region Constructors
         public MainVM()
         {
-            listadoPersonas = clsListadosBL.getListadoPersonas();
             listadoDepartamentos = clsListadosBL.getListadoDepartamentos();
         }
         #endregion
