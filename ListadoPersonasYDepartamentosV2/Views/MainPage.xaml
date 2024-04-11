@@ -24,7 +24,7 @@
                     SelectedItem="{Binding DepartamentoSeleccionado}"/>
                 <Picker
                     ItemsSource="{Binding ListadoPersonas}"
-                    ItemDisplayBinding="{Binding Nombre}"
+                    ItemDisplayBinding="{Binding NombreCompleto}"
                     Title="Seleccionar persona:"
                     TextColor="#FFFFFF"
                     TitleColor="#000000"
@@ -35,7 +35,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label Text="{Binding Nombre}" TextColor="Black" FontAttributes="Bold,Italic"/>
+                            <Label Text="{Binding NombreCompleto}" TextColor="Black" FontAttributes="Bold,Italic"/>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
