@@ -15,7 +15,19 @@
             Padding="30,0">
             <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center" VerticalOptions="Start"/>
             <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                
+                <Picker ItemsSource="{Binding ListadoDepartamentos}"
+                    ItemDisplayBinding="{Binding NombreDept}"
+                    Title="Seleccionar departamento:"
+                    TextColor="#FFFFFF"
+                    TitleColor="#000000"
+                    BackgroundColor="#414141"/>
+                <Picker
+                    ItemsSource="{Binding ListadoDepartamentos}"
+                    ItemDisplayBinding="{Binding NombreDept}"
+                    Title="Seleccionar departamento:"
+                    TextColor="#FFFFFF"
+                    TitleColor="#000000"
+                    BackgroundColor="#414141"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

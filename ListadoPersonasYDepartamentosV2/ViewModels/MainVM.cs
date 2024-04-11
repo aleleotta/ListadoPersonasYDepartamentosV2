@@ -18,8 +18,15 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         #region Properties
         public List<clsPersona> ListadoPersonas { get { return listadoPersonas; } }
         public List<clsDepartamento> ListadoDepartamentos { get { return listadoDepartamentos; } }
-        public clsPersona PersonaSeleccionada { get { return personaSeleccionada; } }
-        public clsDepartamento DepartamentoSeleccionado { get { return departamentoSeleccionado; } }
+        public clsPersona PersonaSeleccionada
+        {
+            get { return personaSeleccionada; }
+            set
+            {
+                personaSeleccionada = value;
+            }
+        }
+        public clsDepartamento DepartamentoSeleccionado { get { return departamentoSeleccionado; } set { departamentoSeleccionado = value; } }
         public int CountPersonas { get { return countPersonas; } }
         #endregion
 
