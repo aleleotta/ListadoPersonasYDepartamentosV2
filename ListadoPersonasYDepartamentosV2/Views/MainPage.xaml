@@ -14,8 +14,8 @@
         <VerticalStackLayout
             Padding="30,0">
             <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center" VerticalOptions="Start"/>
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                <Picker Title="Departments" />
+            <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
