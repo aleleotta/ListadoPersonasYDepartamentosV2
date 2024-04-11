@@ -17,7 +17,7 @@ namespace BL
             {
                 if (persona.Id == idPersona)
                 {
-
+                    listadoFiltrado.Add(persona);
                 }
             }
             return listadoFiltrado;
