@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ListadoPersonasYDepartamentosV2.ViewModels"
              x:Class="ListadoPersonasYDepartamentosV2.Views.MainPage"
-             Title="Menu"
              BackgroundColor="White">
 
     <ContentPage.BindingContext>
@@ -32,6 +31,15 @@
                     BackgroundColor="#414141"
                     SelectedItem="{Binding PersonaSeleccionada}"/>
             </HorizontalStackLayout>
+            <ListView ItemsSource="{Binding ListadoPersonas}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Nombre}" TextColor="Black" FontAttributes="Bold,Italic"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </VerticalStackLayout>
     </ScrollView>
 
