@@ -10,15 +10,14 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
     internal class MainVM : INotifyPropertyChanged
     {
         #region Attributes
-        private ObservableCollection<clsPersonaMayorEdad> listadoPersonas;
+        private ObservableCollection<clsPersonaNombreCompleto> listadoPersonas;
         private ObservableCollection<clsDepartamento> listadoDepartamentos;
-        private clsPersonaMayorEdad personaSeleccionada;
+        private clsPersonaNombreCompleto personaSeleccionada;
         private clsDepartamento departamentoSeleccionado;
-        private int countPersonas;
         #endregion
 
         #region Properties
-        public ObservableCollection<clsPersonaMayorEdad> ListadoPersonas
+        public ObservableCollection<clsPersonaNombreCompleto> ListadoPersonas
         {
             get
             {
@@ -34,7 +33,7 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
             }
         }
 
-        public clsPersonaMayorEdad PersonaSeleccionada
+        public clsPersonaNombreCompleto PersonaSeleccionada
         {
             get
             {
@@ -57,21 +56,13 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
             {
                 departamentoSeleccionado = value;
                 List<clsPersona> listadoPersonasParcial = new List<clsPersona>(clsListadosBL.getListadoPersonasPorId(departamentoSeleccionado.Id));
-                listadoPersonas = new ObservableCollection<clsPersonaMayorEdad>();
+                listadoPersonas = new ObservableCollection<clsPersonaNombreCompleto>();
                 foreach (clsPersona persona in listadoPersonasParcial)
                 {
-                    clsPersonaMayorEdad persona1 = new clsPersonaMayorEdad(persona);
+                    clsPersonaNombreCompleto persona1 = new clsPersonaNombreCompleto(persona);
                     listadoPersonas.Add(persona1);
                 }
                 OnPropertyChanged("ListadoPersonas");
-            }
-        }
-
-        public int CountPersonas
-        {
-            get
-            {
-                return countPersonas;
             }
         }
         #endregion
