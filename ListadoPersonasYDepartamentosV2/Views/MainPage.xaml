@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ListadoPersonasYDepartamentosV2.ViewModels"
              x:Class="ListadoPersonasYDepartamentosV2.Views.MainPage"
              BackgroundColor="White">
-
-    <ContentPage.BindingContext>
-        <local:MainVM/>
-    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0">
             <Label Text="Main Page" TextColor="Black" FontSize="Header" HorizontalOptions="Center" VerticalOptions="Start"/>
-            <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <HorizontalStackLayout Spacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,0,0,50">
                 <Picker
                     ItemsSource="{Binding ListadoDepartamentos}"
                     ItemDisplayBinding="{Binding NombreDept}"
@@ -31,15 +26,10 @@
                     BackgroundColor="#414141"
                     SelectedItem="{Binding PersonaSeleccionada}"/>
             </HorizontalStackLayout>
-            <ListView ItemsSource="{Binding ListadoPersonas}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Label Text="{Binding NombreCompleto}" TextColor="Black" FontAttributes="Bold,Italic"/>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
