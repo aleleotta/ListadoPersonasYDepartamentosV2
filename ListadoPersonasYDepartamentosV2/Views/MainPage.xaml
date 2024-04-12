@@ -26,10 +26,18 @@
                     BackgroundColor="#414141"
                     SelectedItem="{Binding PersonaSeleccionada}"/>
             </HorizontalStackLayout>
-            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
-            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
-            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
-            <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="Center"/>
+            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
+                <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
+                <Label/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
+                <Label Text="Fecha de nacimiento:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
+                <Label/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
+                <Label Text="Edad:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
+                <Label/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
