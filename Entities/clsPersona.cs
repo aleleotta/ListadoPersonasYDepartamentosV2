@@ -53,10 +53,7 @@
             }
             set
             {
-                if (value != null)
-                {
-                    fechaNac = value;
-                }
+                fechaNac = value;
             }
         }
         public int IdDept
@@ -67,10 +64,7 @@
             }
             set
             {
-                if (value != null)
-                {
-                    idDept = value;
-                }
+                idDept = value;
             }
         }
         #endregion

@@ -39,6 +39,12 @@
             this.id = id;
             this.nombreDept = nombreDept;
         }
+
+        public clsDepartamento(clsDepartamento dept)
+        {
+            this.id = dept.Id;
+            this.nombreDept = dept.nombreDept;
+        }
         #endregion
     }
 }
