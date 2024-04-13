@@ -74,9 +74,6 @@ namespace ListadoPersonasYDepartamentosV2.ViewModels
         }
         #endregion
 
-        #region Methods
-        #endregion
-
         #region ViewModel
         public event PropertyChangedEventHandler PropertyChanged;
 
