@@ -18,6 +18,7 @@
                     BackgroundColor="#414141"
                     SelectedItem="{Binding DepartamentoSeleccionado}"/>
                 <Picker
+                    x:Name="picker"
                     ItemsSource="{Binding ListadoPersonas}"
                     ItemDisplayBinding="{Binding NombreCompleto}"
                     Title="Seleccionar persona:"
@@ -26,18 +27,20 @@
                     BackgroundColor="#414141"
                     SelectedItem="{Binding PersonaSeleccionada}"/>
             </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
-                <Label Text="Name:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
-                <Label/>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
-                <Label Text="Fecha de nacimiento:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
-                <Label/>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
-                <Label Text="Edad:" TextColor="Black" FontSize="30" HorizontalOptions="End"/>
-                <Label/>
-            </HorizontalStackLayout>
+            <StackLayout >
+                <HorizontalStackLayout Spacing="30">
+                    <Label Text="Name:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Label Text="{Binding PersonaSeleccionada.NombreCompleto}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="30">
+                    <Label Text="Fecha de nacimiento:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Label Text="{Binding PersonaSeleccionada.FechaNac.Date}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="30">
+                    <Label Text="Edad:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Label Text="{Binding PersonaSeleccionada.Edad}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

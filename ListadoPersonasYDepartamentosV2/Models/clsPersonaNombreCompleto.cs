@@ -5,6 +5,7 @@ namespace ListadoPersonasYDepartamentosV2.Models
     public class clsPersonaNombreCompleto : clsPersona
     {
         private string nombreCompleto;
+        private int edad;
 
         public string NombreCompleto
         {
@@ -14,9 +15,18 @@ namespace ListadoPersonasYDepartamentosV2.Models
             }
         }
 
+        public int Edad
+        {
+            get
+            {
+                return edad;
+            }
+        }
+
         public clsPersonaNombreCompleto(clsPersona persona) : base(persona)
         {
             nombreCompleto = Nombre + " " + Apellidos;
+            edad = DateTime.Now.Year - FechaNac.Year;
         }
     }
 }
