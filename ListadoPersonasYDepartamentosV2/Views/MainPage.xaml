@@ -30,7 +30,7 @@
             <Border Stroke="Black" StrokeThickness="0.5" StrokeShape="RoundRectangle, 10" Padding="10" BackgroundColor="Beige">
                 <StackLayout Spacing="5">
                     <FlexLayout Wrap="Wrap">
-                        <Label Text="Name:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" Margin="0,0,5,0"/>
+                        <Label Text="Nombre:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" Margin="0,0,5,0"/>
                         <Label Text="{Binding PersonaSeleccionada.NombreCompleto}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
                     </FlexLayout>
                     <FlexLayout Wrap="Wrap">
