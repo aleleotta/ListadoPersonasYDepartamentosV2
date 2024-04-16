@@ -41,10 +41,10 @@
                         <Label Text="Edad:" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" Margin="0,0,5,0"/>
                         <Label Text="{Binding PersonaSeleccionada.Edad}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
                     </FlexLayout>
-                    <FlexLayout Wrap="Wrap">
-                        <Label Text="Mayor de edad?" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" Margin="0,0,5,0"/>
+                    <VerticalStackLayout>
+                        <Label Text="Mayor de edad?" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
                         <Label Text="{Binding PersonaSeleccionada.Mayor}" TextColor="Black" FontSize="20" VerticalOptions="Center"/>
-                    </FlexLayout>
+                    </VerticalStackLayout>
                 </StackLayout>
             </Border>
         </VerticalStackLayout>
