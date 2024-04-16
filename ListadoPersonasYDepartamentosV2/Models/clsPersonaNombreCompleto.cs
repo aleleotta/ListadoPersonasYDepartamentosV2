@@ -6,6 +6,7 @@ namespace ListadoPersonasYDepartamentosV2.Models
     {
         private string nombreCompleto;
         private int edad;
+        private bool mayor;
 
         public string NombreCompleto
         {
@@ -23,10 +24,19 @@ namespace ListadoPersonasYDepartamentosV2.Models
             }
         }
 
+        public bool Mayor
+        {
+            get
+            {
+                return mayor;
+            }
+        }
+
         public clsPersonaNombreCompleto(clsPersona persona) : base(persona)
         {
-            nombreCompleto = Nombre + " " + Apellidos;
+            nombreCompleto = $"{Nombre} {Apellidos}";
             edad = DateTime.Now.Year - FechaNac.Year;
+            if (edad >= 18) mayor = true;
         }
     }
 }
