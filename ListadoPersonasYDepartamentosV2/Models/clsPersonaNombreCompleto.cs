@@ -20,6 +20,7 @@ namespace ListadoPersonasYDepartamentosV2.Models
         {
             get
             {
+                edad = DateTime.Now.Year - FechaNac.Year;
                 return edad;
             }
         }
@@ -35,7 +36,6 @@ namespace ListadoPersonasYDepartamentosV2.Models
         public clsPersonaNombreCompleto(clsPersona persona) : base(persona)
         {
             nombreCompleto = $"{Nombre} {Apellidos}";
-            edad = DateTime.Now.Year - FechaNac.Year;
             if (edad >= 18) mayor = true;
         }
     }
